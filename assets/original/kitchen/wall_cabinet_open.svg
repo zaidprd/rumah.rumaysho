@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 130" width="380" height="130">
+  <!-- Bayangan Bawah Lemari Gantung -->
+  <rect x="6" y="10" width="368" height="116" rx="8" fill="#2b3a4a" opacity="0.12"/>
+  
+  <!-- Rangka Lemari Gantung Kayu Madu -->
+  <rect x="4" y="4" width="372" height="122" rx="8" fill="#ffa834" stroke="#2b3a4a" stroke-width="4.5" stroke-linejoin="round"/>
+  
+  <!-- Ruang Dalam Lemari Terbuka (Interior Shelves) -->
+  <rect x="14" y="14" width="352" height="102" rx="5" fill="#f8fcff" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="18" y="18" width="344" height="94" fill="#eff6fa"/>
+  <!-- Rak Kayu Tengah -->
+  <rect x="14" y="62" width="352" height="10" rx="3" fill="#ffd175" stroke="#2b3a4a" stroke-width="2.5"/>
+
+  <!-- Pintu-Pintu Terbuka Mengayun ke Samping -->
+  <!-- Pintu Kiri 1 Terbuka -->
+  <polygon points="14,14 2,24 2,106 14,116" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.5"/>
+  <!-- Pintu Kiri 2 Terbuka -->
+  <polygon points="186,14 176,24 176,106 186,116" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.5"/>
+  <!-- Pintu Kanan 1 Terbuka -->
+  <polygon points="194,14 204,24 204,106 194,116" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.5"/>
+  <!-- Pintu Kanan 2 Terbuka -->
+  <polygon points="366,14 378,24 378,106 366,116" fill="#ffffff" stroke="#2b3a4a" stroke-width="2.5"/>
+</svg>

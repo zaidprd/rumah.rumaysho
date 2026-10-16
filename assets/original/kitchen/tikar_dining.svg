@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 180" width="540" height="180">
+  <!-- Bayangan Tikar Lantai di Bawah Meja -->
+  <polygon points="55,16 485,16 525,164 15,164" fill="#2b3a4a" opacity="0.12"/>
+  <ellipse cx="270" cy="166" rx="250" ry="10" fill="#2b3a4a" opacity="0.1"/>
+
+  <!-- Karpet Tikar Putih Bersih di Bawah Meja (Perspektif Rebah) -->
+  <polygon points="60,20 480,20 520,160 20,160" 
+           fill="#ffffff" stroke="#2b3a4a" stroke-width="4.5" stroke-linejoin="round"/>
+           
+  <!-- Lis Pinggiran Tikar Strawberry Pink Manis -->
+  <polygon points="60,20 480,20 475,32 65,32" fill="#ff70ad"/>
+  <polygon points="20,160 520,160 515,148 25,148" fill="#ff70ad"/>
+  <line x1="20" y1="160" x2="520" y2="160" stroke="#e04d80" stroke-width="3"/>
+  <!-- Jahitan Putih Halus pada Lis -->
+  <line x1="68" y1="26" x2="472" y2="26" stroke="#ffffff" stroke-width="2" stroke-dasharray="8 6"/>
+  <line x1="28" y1="154" x2="512" y2="154" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="8 6"/>
+
+  <!-- Pola Tekstur Lembut Karpet Bersih -->
+  <g stroke="#f5e6ee" stroke-width="2" opacity="0.6">
+    <line x1="65" y1="55" x2="475" y2="55"/>
+    <line x1="55" y1="85" x2="485" y2="85"/>
+    <line x1="45" y1="115" x2="495" y2="115"/>
+  </g>
+</svg>

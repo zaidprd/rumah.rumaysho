@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <!-- 1. Dinding & Sudut Perspektif Ruangan 2.5D -->
+  <!-- Dinding Belakang (Sky Blue Lembut) -->
+  <rect x="0" y="0" width="1280" height="440" fill="#e8f4fa"/>
+  
+  <!-- Dinding Kiri (Miring 1-Point Perspective) -->
+  <polygon points="0,0 120,60 120,440 0,540" fill="#d2e7f4"/>
+  <line x1="120" y1="60" x2="120" y2="440" stroke="#b6d5e8" stroke-width="3"/>
+  <line x1="0" y1="540" x2="120" y2="440" stroke="#b6d5e8" stroke-width="3"/>
+
+  <!-- Dinding Kanan (Miring 1-Point Perspective) -->
+  <polygon points="1280,0 1160,60 1160,440 1280,540" fill="#d2e7f4"/>
+  <line x1="1160" y1="60" x2="1160" y2="440" stroke="#b6d5e8" stroke-width="3"/>
+  <line x1="1280" y1="540" x2="1160" y2="440" stroke="#b6d5e8" stroke-width="3"/>
+
+  <!-- Lis Dinding Atas (Plafon) -->
+  <line x1="0" y1="0" x2="1280" y2="0" stroke="#ffffff" stroke-width="12"/>
+  <line x1="120" y1="60" x2="1160" y2="60" stroke="#c5e1f0" stroke-width="3"/>
+
+  <!-- 2. Lantai Ubin Krem Kuning Hangat Berperspektif -->
+  <polygon points="0,540 120,440 1160,440 1280,540 1280,720 0,720" fill="#fce7b8"/>
+  <!-- Lis Pembatas Lantai Belakang -->
+  <line x1="120" y1="440" x2="1160" y2="440" stroke="#e0a353" stroke-width="7"/>
+
+  <!-- Garis-Garis Ubin Lantai Perspektif -->
+  <g stroke="#edd39b" stroke-width="2.5">
+    <!-- Garis Perspektif Menyebar ke Depan -->
+    <line x1="220" y1="440" x2="100" y2="720"/>
+    <line x1="360" y1="440" x2="300" y2="720"/>
+    <line x1="500" y1="440" x2="500" y2="720"/>
+    <line x1="640" y1="440" x2="700" y2="720"/>
+    <line x1="780" y1="440" x2="900" y2="720"/>
+    <line x1="920" y1="440" x2="1100" y2="720"/>
+    <line x1="1060" y1="440" x2="1280" y2="680"/>
+    <!-- Garis Ubin Horisontal -->
+    <line x1="95" y1="480" x2="1185" y2="480"/>
+    <line x1="65" y1="535" x2="1215" y2="535"/>
+    <line x1="30" y1="605" x2="1250" y2="605"/>
+    <line x1="0" y1="685" x2="1280" y2="685"/>
+  </g>
+
+  <!-- 3. Pigura Lukisan Daun Botani di Dinding Kiri (Bebas Gambar Bernyawa) -->
+  <g transform="translate(30, 130)">
+    <!-- Bingkai Kayu Gelap -->
+    <rect x="0" y="0" width="60" height="90" rx="4" fill="#2b3a4a"/>
+    <rect x="4" y="4" width="52" height="82" rx="2" fill="#ffffff"/>
+    <!-- Daun Botani Abstrak Islami -->
+    <path d="M 30 70 Q 25 35 15 25 Q 35 30 30 70 Z" fill="#58cc02"/>
+    <path d="M 30 70 Q 35 45 45 35 Q 40 55 30 70 Z" fill="#ff9600"/>
+    <circle cx="28" cy="22" r="6" fill="#ff70ad"/>
+    <line x1="30" y1="70" x2="22" y2="30" stroke="#356611" stroke-width="1.5"/>
+  </g>
+
+  <!-- 4. Jendela Dapur di Kiri Belakang (Pemandangan Cerah Luar) -->
+  <g transform="translate(190, 105)">
+    <!-- Bingkai Luar Jendela Putih -->
+    <rect x="0" y="0" width="180" height="205" rx="8" fill="#ffffff" stroke="#2b3a4a" stroke-width="4"/>
+    <!-- Kaca Jendela & Pemandangan Alam -->
+    <rect x="10" y="10" width="160" height="185" rx="4" fill="#aee2ff"/>
+    <!-- Awan Putih -->
+    <circle cx="130" cy="50" r="16" fill="#ffffff" opacity="0.85"/>
+    <circle cx="145" cy="52" r="12" fill="#ffffff" opacity="0.85"/>
+    <!-- Pohon Hijau Luar Jendela (Duolingo Green) -->
+    <rect x="52" y="100" width="14" height="90" fill="#6d4827"/>
+    <circle cx="60" cy="100" r="45" fill="#58cc02"/>
+    <circle cx="95" cy="115" r="35" fill="#46a302"/>
+    <circle cx="30" cy="125" r="30" fill="#58cc02"/>
+    <!-- Kusen Palang Jendela Putih -->
+    <line x1="90" y1="10" x2="90" y2="195" stroke="#ffffff" stroke-width="8"/>
+    <line x1="10" y1="110" x2="170" y2="110" stroke="#ffffff" stroke-width="8"/>
+    <!-- Ambang Bawah Jendela Kayu -->
+    <rect x="-8" y="200" width="196" height="14" rx="4" fill="#ffd175" stroke="#2b3a4a" stroke-width="3"/>
+    <!-- Pot Tanaman Kecil di Ambang Jendela -->
+    <polygon points="128,198 142,198 140,210 130,210" fill="#e07d10" stroke="#2b3a4a" stroke-width="2"/>
+    <circle cx="135" cy="192" r="8" fill="#58cc02"/>
+  </g>
+
+  <!-- 5. Kitchen Counter Meja Dapur Panjang (di Dinding Belakang) -->
+  <g transform="translate(180, 340)">
+    <!-- Badan Counter Kayu Madu Hangat -->
+    <rect x="0" y="18" width="750" height="135" rx="4" fill="#ffa834" stroke="#2b3a4a" stroke-width="4.5"/>
+    <!-- Pintu-Pintu Lemari Bawah Counter -->
+    <!-- Pintu Kiri 1 & 2 -->
+    <rect x="15" y="32" width="95" height="110" rx="4" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2.5"/>
+    <rect x="118" y="32" width="95" height="110" rx="4" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2.5"/>
+    <circle cx="100" cy="85" r="4.5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+    <circle cx="128" cy="85" r="4.5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+    <!-- Pintu Tengah 3 & 4 -->
+    <rect x="222" y="32" width="95" height="110" rx="4" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2.5"/>
+    <circle cx="307" cy="85" r="4.5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+    <!-- Laci-Laci Tengah 4 Susun -->
+    <rect x="325" y="32" width="80" height="24" rx="3" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2"/>
+    <line x1="355" y1="44" x2="375" y2="44" stroke="#ff70ad" stroke-width="3" stroke-linecap="round"/>
+    <rect x="325" y="60" width="80" height="24" rx="3" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2"/>
+    <line x1="355" y1="72" x2="375" y2="72" stroke="#ff70ad" stroke-width="3" stroke-linecap="round"/>
+    <rect x="325" y="88" width="80" height="24" rx="3" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2"/>
+    <line x1="355" y1="100" x2="375" y2="100" stroke="#ff70ad" stroke-width="3" stroke-linecap="round"/>
+    <rect x="325" y="116" width="80" height="24" rx="3" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2"/>
+    <line x1="355" y1="128" x2="375" y2="128" stroke="#ff70ad" stroke-width="3" stroke-linecap="round"/>
+    <!-- Laci Kanan Tambahan -->
+    <rect x="413" y="32" width="80" height="24" rx="3" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2"/>
+    <line x1="443" y1="44" x2="463" y2="44" stroke="#ff70ad" stroke-width="3" stroke-linecap="round"/>
+    <rect x="413" y="60" width="80" height="82" rx="4" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2"/>
+    <circle cx="483" cy="100" r="4.5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+
+    <!-- Kompor & Oven Modern Putih Bersih di Sisi Kanan Counter -->
+    <rect x="502" y="10" width="160" height="143" rx="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="4"/>
+    <!-- Panel Tombol Putar Kompor -->
+    <rect x="508" y="16" width="148" height="24" rx="3" fill="#f0f5f8"/>
+    <circle cx="525" cy="28" r="4" fill="#2b3a4a"/>
+    <circle cx="545" cy="28" r="4" fill="#2b3a4a"/>
+    <circle cx="620" cy="28" r="4" fill="#2b3a4a"/>
+    <circle cx="640" cy="28" r="4" fill="#2b3a4a"/>
+    <!-- Pintu Oven Kaca Hitam -->
+    <rect x="515" y="46" width="134" height="98" rx="6" fill="#354255"/>
+    <rect x="525" y="56" width="114" height="78" rx="4" fill="#1f2733"/>
+    <rect x="545" y="48" width="74" height="6" rx="2" fill="#ffffff"/>
+
+    <!-- Teko Air Tradisional di Atas Kompor -->
+    <path d="M 570 0 C 560 -18, 595 -18, 605 0 Z" fill="#9e563b" stroke="#2b3a4a" stroke-width="2.5"/>
+    <path d="M 575 -18 C 575 -26, 590 -26, 590 -18" fill="none" stroke="#2b3a4a" stroke-width="2.5"/>
+    <!-- Corong Teko -->
+    <path d="M 565 -6 L 550 -16" stroke="#2b3a4a" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Lemari Paling Kanan -->
+    <rect x="670" y="32" width="72" height="110" rx="4" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="2.5"/>
+    <circle cx="682" cy="85" r="4.5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+
+    <!-- Daun Counter Meja Putih Bersih Tebal (Countertop) -->
+    <rect x="-8" y="0" width="766" height="20" rx="5" fill="#ffffff" stroke="#2b3a4a" stroke-width="4"/>
+    <line x1="0" y1="5" x2="750" y2="5" stroke="#edf5f8" stroke-width="3"/>
+  </g>
+
+  <!-- 6. Microwave di Atas Meja Counter -->
+  <g transform="translate(425, 305)">
+    <!-- Bodi Microwave Putih Bersih -->
+    <rect x="0" y="0" width="95" height="52" rx="6" fill="#ffffff" stroke="#2b3a4a" stroke-width="3.5"/>
+    <!-- Pintu Kaca Microwave Gelap -->
+    <rect x="6" y="8" width="56" height="36" rx="4" fill="#354255"/>
+    <rect x="10" y="12" width="48" height="28" rx="3" fill="#202936"/>
+    <!-- Panel Tombol Digital di Sisi Kanan -->
+    <rect x="68" y="8" width="20" height="12" rx="2" fill="#1cb0f6"/>
+    <circle cx="78" cy="28" r="4" fill="#d0dfe8"/>
+    <circle cx="78" cy="38" r="4" fill="#d0dfe8"/>
+  </g>
+
+  <!-- 7. Rak Gantungan Perkakas Dapur di Bawah Lemari Atas -->
+  <g transform="translate(560, 265)">
+    <!-- Rel Besi Gantungan -->
+    <line x1="0" y1="0" x2="90" y2="0" stroke="#2b3a4a" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="4" cy="0" r="3" fill="#ffa834"/>
+    <circle cx="86" cy="0" r="3" fill="#ffa834"/>
+    <!-- Sendok Sup (Ladle) -->
+    <line x1="20" y1="0" x2="20" y2="30" stroke="#2b3a4a" stroke-width="2.5"/>
+    <circle cx="20" cy="34" r="7" fill="#354255"/>
+    <!-- Cempal Kain Pink -->
+    <polygon points="45,4 52,14 45,24 38,14" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+    <!-- Wajan Penggorengan Kecil (Pan) -->
+    <line x1="70" y1="0" x2="70" y2="24" stroke="#2b3a4a" stroke-width="2.5"/>
+    <circle cx="70" cy="32" r="11" fill="#354255" stroke="#2b3a4a" stroke-width="2"/>
+    <circle cx="70" cy="32" r="7" fill="#202936"/>
+  </g>
+
+  <!-- 8. Kulkas Berdiri 2 Pintu di Kanan Belakang -->
+  <g transform="translate(950, 165)">
+    <!-- Bayangan Bawah Kulkas -->
+    <rect x="0" y="320" width="155" height="12" rx="6" fill="#2b3a4a" opacity="0.15"/>
+    <!-- Bodi Utama Kulkas Putih Bersih Elegan -->
+    <rect x="0" y="0" width="155" height="320" rx="14" fill="#ffffff" stroke="#2b3a4a" stroke-width="4.5"/>
+    
+    <!-- Pintu Atas (Freezer) -->
+    <rect x="5" y="5" width="145" height="100" rx="10" fill="#f8fcff"/>
+    <rect x="18" y="30" width="8" height="48" rx="4" fill="#d2e3ed" stroke="#2b3a4a" stroke-width="2.5"/>
+
+    <!-- Garis Pemisah Pintu Tengah -->
+    <line x1="0" y1="110" x2="155" y2="110" stroke="#2b3a4a" stroke-width="4"/>
+
+    <!-- Pintu Bawah Kulkas -->
+    <rect x="5" y="115" width="145" height="200" rx="10" fill="#f8fcff"/>
+    <rect x="18" y="140" width="8" height="68" rx="4" fill="#d2e3ed" stroke="#2b3a4a" stroke-width="2.5"/>
+
+    <!-- Magnet Kulkas Ceria Duolingo -->
+    <circle cx="65" cy="50" r="9" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2.5"/>
+    <circle cx="95" cy="70" r="8" fill="#ffc800" stroke="#2b3a4a" stroke-width="2.5"/>
+    <rect x="58" y="140" width="15" height="15" rx="4" fill="#1cb0f6" stroke="#2b3a4a" stroke-width="2.5"/>
+
+    <!-- Pot Tanaman Kecil di Atas Kulkas -->
+    <polygon points="70,-2 86,-2 84,10 72,10" fill="#e07d10" stroke="#2b3a4a" stroke-width="2"/>
+    <circle cx="78" cy="-8" r="8" fill="#58cc02"/>
+  </g>
+
+  <!-- 9. Tanaman Hias Pot Besar di Kiri & Kanan Ruangan -->
+  <!-- Tanaman Pot Kiri -->
+  <g transform="translate(60, 340)">
+    <!-- Daun Hijau Rimbun (Bebas Bentuk Makhluk Bernyawa) -->
+    <path d="M 50 100 Q 10 60 20 20 Q 50 60 50 100 Z" fill="#58cc02" stroke="#2b3a4a" stroke-width="3"/>
+    <path d="M 50 100 Q 90 60 80 20 Q 50 60 50 100 Z" fill="#46a302" stroke="#2b3a4a" stroke-width="3"/>
+    <path d="M 50 100 Q 50 40 50 0 Q 60 40 50 100 Z" fill="#58cc02" stroke="#2b3a4a" stroke-width="3"/>
+    <circle cx="35" cy="45" r="16" fill="#75d928"/>
+    <circle cx="65" cy="45" r="16" fill="#58cc02"/>
+    <!-- Pot Terakota Oranye Hangat -->
+    <polygon points="25,95 75,95 70,145 30,145" fill="#e07d10" stroke="#2b3a4a" stroke-width="3.5"/>
+    <rect x="20" y="88" width="60" height="10" rx="3" fill="#ff9600" stroke="#2b3a4a" stroke-width="3"/>
+    <ellipse cx="50" cy="148" rx="24" ry="5" fill="#2b3a4a" opacity="0.2"/>
+  </g>
+
+  <!-- Tanaman Daun Lebar Cantik di Kanan (Dekat Kulkas) -->
+  <g transform="translate(1120, 290)">
+    <!-- Daun-daun Lebar Menjulang Segar -->
+    <path d="M 40 160 Q -10 110 5 40 Q 40 100 40 160 Z" fill="#58cc02" stroke="#2b3a4a" stroke-width="3"/>
+    <path d="M 40 160 Q 90 100 75 30 Q 40 100 40 160 Z" fill="#46a302" stroke="#2b3a4a" stroke-width="3"/>
+    <path d="M 40 160 Q 40 60 40 0 Q 55 60 40 160 Z" fill="#75d928" stroke="#2b3a4a" stroke-width="3"/>
+    <!-- Pot Terakota Kanan -->
+    <polygon points="15,155 65,155 60,205 20,205" fill="#e07d10" stroke="#2b3a4a" stroke-width="3.5"/>
+    <rect x="10" y="148" width="60" height="10" rx="3" fill="#ff9600" stroke="#2b3a4a" stroke-width="3"/>
+    <ellipse cx="40" cy="208" rx="24" ry="5" fill="#2b3a4a" opacity="0.2"/>
+  </g>
+</svg>
