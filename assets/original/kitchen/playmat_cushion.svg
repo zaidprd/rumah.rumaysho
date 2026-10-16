@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 200" width="380" height="200">
+  <!-- Bayangan Lembut di Lantai (2.5D Floor Shadow) -->
+  <ellipse cx="190" cy="175" rx="170" ry="18" fill="#2b3a4a" opacity="0.18"/>
+
+  <!-- Ketebalan Busa Samping Matras (3D Depth) -->
+  <path d="M 24 135 L 24 158 C 24 168, 356 168, 356 158 L 356 135 Z" fill="#e04d80"/>
+  <!-- Dinding Depan Busa Matras Pink Stroberi -->
+  <path d="M 20 130 C 20 144, 360 144, 360 130 L 360 152 C 360 164, 20 164, 20 152 Z" 
+        fill="#ff70ad" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Garis Jahitan Bawah Matras -->
+  <path d="M 26 142 C 60 152, 320 152, 354 142" fill="none" stroke="#ffa3ca" stroke-width="2.5"/>
+
+  <!-- Permukaan Atas Matras Empuk (2.5D Top-Surface Miring Rebah) -->
+  <path d="M 50 50 C 70 38, 310 38, 330 50 C 365 72, 375 118, 360 130 C 340 144, 40 144, 20 130 C 5 118, 15 72, 50 50 Z" 
+        fill="#fff2f6" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+        
+  <!-- Pola Jahitan Quilt Kasur Busa Empuk Halus -->
+  <g stroke="#ffb8cc" stroke-width="2.5" stroke-linecap="round" fill="none">
+    <path d="M 70 65 Q 190 85 310 65"/>
+    <path d="M 40 92 Q 190 115 340 92"/>
+    <path d="M 30 118 Q 190 140 350 118"/>
+  </g>
+  <!-- Kancing Titik Jahitan Cekung Matras -->
+  <g fill="#ff70ad">
+    <circle cx="130" cy="74" r="3.5"/>
+    <circle cx="250" cy="74" r="3.5"/>
+    <circle cx="90" cy="102" r="3.5"/>
+    <circle cx="190" cy="104" r="4"/>
+    <circle cx="290" cy="102" r="3.5"/>
+    <circle cx="140" cy="128" r="3.5"/>
+    <circle cx="240" cy="128" r="3.5"/>
+  </g>
+
+  <!-- Lis Tepi Matras (Piping Pink Manis) -->
+  <path d="M 50 50 C 70 38, 310 38, 330 50 C 365 72, 375 118, 360 130 C 340 144, 40 144, 20 130 C 5 118, 15 72, 50 50 Z" 
+        fill="none" stroke="#ffa8cd" stroke-width="3"/>
+
+  <!-- Bantal Sofa Kotak Mint Empuk di Atas Matras (Kiri) -->
+  <!-- Bayangan Bantal -->
+  <ellipse cx="98" cy="90" rx="42" ry="16" fill="#2b3a4a" opacity="0.15"/>
+  <rect x="62" y="44" width="72" height="52" rx="14" fill="#4eaeb5" transform="rotate(-6 98 70)"/>
+  <rect x="62" y="40" width="72" height="52" rx="14" fill="#78d1d8" stroke="#2b3a4a" stroke-width="3.5" transform="rotate(-6 98 70)"/>
+  <!-- Cekungan Jahitan Bantal Mint -->
+  <circle cx="97" cy="65" r="4.5" fill="#3d8f95" stroke="#2b3a4a" stroke-width="2"/>
+  <line x1="74" y1="48" x2="93" y2="62" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="120" y1="48" x2="101" y2="62" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="76" y1="82" x2="93" y2="68" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="118" y1="82" x2="101" y2="68" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Bantal Bulat Emas Hangat di Atas Matras (Kanan) -->
+  <ellipse cx="270" cy="85" rx="36" ry="14" fill="#2b3a4a" opacity="0.15"/>
+  <circle cx="270" cy="68" r="28" fill="#d97706"/>
+  <circle cx="270" cy="64" r="28" fill="#ffc800" stroke="#2b3a4a" stroke-width="3.5"/>
+  <!-- Jahitan Kancing Bantal Emas -->
+  <circle cx="270" cy="64" r="5" fill="#ffa834" stroke="#2b3a4a" stroke-width="2"/>
+  <circle cx="268" cy="62" r="1.5" fill="#ffffff"/>
+  <!-- Kerutan Empuk Bantal Halus -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7">
+    <line x1="270" y1="40" x2="270" y2="58"/>
+    <line x1="270" y1="70" x2="270" y2="88"/>
+    <line x1="246" y1="64" x2="264" y2="64"/>
+    <line x1="276" y1="64" x2="294" y2="64"/>
+  </g>
+</svg>

@@ -1,37 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 280" width="354" height="280">
-  <!-- Sandaran Kursi Kiri: Pink Permen Ceria (Duolingo Style) -->
-  <rect x="25" y="16" width="70" height="86" rx="10" fill="#e04d80"/>
-  <rect x="25" y="10" width="70" height="86" rx="10" fill="#ff70ad" stroke="#2b3a4a" stroke-width="4"/>
-  <rect x="36" y="24" width="48" height="22" rx="6" fill="#ffa8cd" stroke="#2b3a4a" stroke-width="2.5"/>
-  <rect x="36" y="54" width="48" height="30" rx="6" fill="#e04d80"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <!-- Bayangan 4 Kaki Meja di Lantai (2.5D Shadow) -->
+  <ellipse cx="44" cy="268" rx="20" ry="8" fill="#2b3a4a" opacity="0.2"/>
+  <ellipse cx="316" cy="268" rx="20" ry="8" fill="#2b3a4a" opacity="0.2"/>
+  <ellipse cx="78" cy="235" rx="15" ry="6" fill="#2b3a4a" opacity="0.14"/>
+  <ellipse cx="282" cy="235" rx="15" ry="6" fill="#2b3a4a" opacity="0.14"/>
 
-  <!-- Sandaran Kursi Kanan: Pink Permen Ceria -->
-  <rect x="259" y="16" width="70" height="86" rx="10" fill="#e04d80"/>
-  <rect x="259" y="10" width="70" height="86" rx="10" fill="#ff70ad" stroke="#2b3a4a" stroke-width="4"/>
-  <rect x="270" y="24" width="48" height="22" rx="6" fill="#ffa8cd" stroke="#2b3a4a" stroke-width="2.5"/>
-  <rect x="270" y="54" width="48" height="30" rx="6" fill="#e04d80"/>
+  <!-- Dua Kaki Meja Belakang (Lebih Pendek/Mundur) -->
+  <rect x="72" y="110" width="16" height="125" rx="4" fill="#c26a10" stroke="#2b3a4a" stroke-width="3.5"/>
+  <rect x="274" y="110" width="16" height="125" rx="4" fill="#c26a10" stroke="#2b3a4a" stroke-width="3.5"/>
+  <!-- Sepatu Kaki Belakang -->
+  <rect x="70" y="224" width="20" height="12" rx="3" fill="#8c5828" stroke="#2b3a4a" stroke-width="2.5"/>
+  <rect x="272" y="224" width="20" height="12" rx="3" fill="#8c5828" stroke="#2b3a4a" stroke-width="2.5"/>
 
-  <!-- Kaki Meja Makan Kayu Madu Kokoh -->
-  <rect x="26" y="180" width="24" height="95" rx="5" fill="#d97706" stroke="#2b3a4a" stroke-width="4"/>
-  <rect x="304" y="180" width="24" height="95" rx="5" fill="#d97706" stroke="#2b3a4a" stroke-width="4"/>
-  <!-- Sepatu Kaki Meja -->
-  <rect x="24" y="258" width="28" height="17" rx="4" fill="#8c5828" stroke="#2b3a4a" stroke-width="3"/>
-  <rect x="302" y="258" width="28" height="17" rx="4" fill="#8c5828" stroke="#2b3a4a" stroke-width="3"/>
+  <!-- Apron / Rangka Bawah Meja Kayu Madu -->
+  <path d="M 32 110 L 328 110 L 328 140 L 32 140 Z" fill="#e07d10"/>
+  <path d="M 32 105 L 328 105 L 328 135 L 32 135 Z" fill="#ffa834" stroke="#2b3a4a" stroke-width="4"/>
 
-  <!-- Badan / Apron Meja Makan Kayu Hangat -->
-  <rect x="12" y="86" width="330" height="106" rx="8" fill="#d97706"/>
-  <rect x="12" y="80" width="330" height="106" rx="8" fill="#ffa834" stroke="#2b3a4a" stroke-width="4"/>
-  <rect x="20" y="88" width="314" height="90" fill="#ffbe5c"/>
-  
-  <!-- Daun Meja Atas (Tabletop Utama) -->
-  <rect x="2" y="70" width="350" height="26" rx="8" fill="#d97706"/>
-  <rect x="2" y="64" width="350" height="26" rx="8" fill="#ffd175" stroke="#2b3a4a" stroke-width="4"/>
-  <line x1="12" y1="70" x2="342" y2="70" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Ketebalan Lis Depan Daun Meja (3D Bevel) -->
+  <path d="M 10 92 L 350 92 L 350 110 L 10 110 Z" fill="#d97706"/>
+  <rect x="8" y="88" width="344" height="20" rx="6" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="4"/>
 
-  <!-- Taplak Meja Strawberry Pink & Krem Ceria di Tengah -->
-  <rect x="110" y="70" width="134" height="120" rx="6" fill="#ffffff" stroke="#2b3a4a" stroke-width="3.5"/>
-  <rect x="110" y="70" width="134" height="120" rx="6" fill="#ffeaf2"/>
-  <!-- Pola Garis Manis di Ujung Taplak -->
-  <line x1="110" y1="176" x2="244" y2="176" stroke="#ff70ad" stroke-width="5"/>
-  <line x1="110" y1="183" x2="244" y2="183" stroke="#ff9ec6" stroke-width="2.5"/>
+  <!-- Permukaan Bidang Atas Meja 2.5D (Top-Surface Perspective untuk Menaruh Piring) -->
+  <path d="M 35 30 C 45 22, 315 22, 325 30 L 352 88 L 8 88 Z" 
+        fill="#ffd175" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M 38 35 L 322 35 L 345 84 L 15 84 Z" fill="#ffdf94" opacity="0.6"/>
+  <!-- Garis Alur Serat Kayu Lembut di Permukaan Meja -->
+  <line x1="60" y1="52" x2="300" y2="52" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="45" y1="70" x2="315" y2="70" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Taplak Meja Strawberry Pink Membentang dari Atas ke Depan -->
+  <!-- Bagian Taplak di Permukaan Atas Meja (2.5D Sloping) -->
+  <path d="M 125 30 L 235 30 L 245 88 L 115 88 Z" fill="#ffffff" stroke="#2b3a4a" stroke-width="3"/>
+  <path d="M 125 30 L 235 30 L 245 88 L 115 88 Z" fill="#ffeaf2"/>
+  <!-- Bagian Taplak yang Menjuntai Turun ke Depan Meja -->
+  <rect x="115" y="88" width="130" height="75" rx="6" fill="#ffffff" stroke="#2b3a4a" stroke-width="3.5"/>
+  <rect x="115" y="88" width="130" height="75" rx="6" fill="#ffeaf2"/>
+  <!-- Garis Hiasan Pink Stroberi di Ujung Taplak -->
+  <line x1="115" y1="150" x2="245" y2="150" stroke="#ff70ad" stroke-width="5"/>
+  <line x1="115" y1="156" x2="245" y2="156" stroke="#ffa3ca" stroke-width="2.5"/>
+
+  <!-- Dua Kaki Meja Depan (Kuat, Terlihat Panjang di Depan) -->
+  <rect x="32" y="105" width="22" height="155" rx="5" fill="#ffa834" stroke="#2b3a4a" stroke-width="4"/>
+  <rect x="306" y="105" width="22" height="155" rx="5" fill="#ffa834" stroke="#2b3a4a" stroke-width="4"/>
+  <!-- Sepatu Kaki Meja Depan Kayu Gelap -->
+  <rect x="30" y="250" width="26" height="18" rx="4" fill="#8c5828" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="304" y="250" width="26" height="18" rx="4" fill="#8c5828" stroke="#2b3a4a" stroke-width="3"/>
 </svg>
