@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 104" width="104" height="104">
+  <!-- Pipa Dudukan Bawah Keran -->
+  <rect x="42" y="86" width="20" height="14" rx="4" fill="#6ba3be" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="36" y="96" width="32" height="7" rx="3" fill="#8ec3db" stroke="#2b3a4a" stroke-width="3"/>
+
+  <!-- Pipa Leher Angsa Melengkung Tebal Bersahabat -->
+  <path d="M 52 88 L 52 42 C 52 18, 22 18, 22 42 L 22 56" 
+        fill="none" stroke="#2b3a4a" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 52 88 L 52 42 C 52 18, 22 18, 22 42 L 22 56" 
+        fill="none" stroke="#a3d5ec" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Kilau Perak Putih Bersih -->
+  <path d="M 50 82 L 50 42 C 50 24, 26 24, 26 42" 
+        fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Mulut Pancuran Air (Spout) -->
+  <rect x="14" y="54" width="16" height="9" rx="3.5" fill="#5b9bb8" stroke="#2b3a4a" stroke-width="3"/>
+
+  <!-- Tuas Putaran Keran Duolingo Cyan (#1cb0f6) -->
+  <!-- Bayangan Tuas -->
+  <circle cx="74" cy="54" r="17" fill="#0d88c2"/>
+  <circle cx="74" cy="50" r="17" fill="#1cb0f6" stroke="#2b3a4a" stroke-width="3.5"/>
+  <circle cx="74" cy="50" r="10" fill="#6dd4ff" stroke="#2b3a4a" stroke-width="2.5"/>
+  <!-- Tangkai Pemutar Atas Putih Bersih -->
+  <rect x="71" y="28" width="6" height="22" rx="3" fill="#2b3a4a"/>
+  <circle cx="74" cy="27" r="6" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2.5"/>
+  <circle cx="72" cy="25" r="2" fill="#ffffff"/>
+</svg>

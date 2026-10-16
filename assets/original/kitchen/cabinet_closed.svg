@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 304" width="306" height="304">
+  <!-- Mahkota / Lis Atas Lemari Madu Hangat -->
+  <path d="M 6 18 L 300 18 L 294 6 L 12 6 Z" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Bayangan Tebal Rangka Lemari (Duolingo 3D Pop) -->
+  <rect x="12" y="24" width="282" height="274" rx="12" fill="#d97706"/>
+  <!-- Rangka Utama Lemari Kayu Hangat Manis -->
+  <rect x="12" y="18" width="282" height="274" rx="12" fill="#ffa834" stroke="#2b3a4a" stroke-width="4.5" stroke-linejoin="round"/>
+  
+  <!-- Ruang Dalam Pintu -->
+  <rect x="22" y="28" width="262" height="254" rx="8" fill="#f59e0b"/>
+  
+  <!-- Pintu Kiri Lemari (Tertutup) -->
+  <!-- Bayangan Pintu Kiri -->
+  <rect x="26" y="36" width="124" height="242" rx="6" fill="#e07d10"/>
+  <rect x="26" y="32" width="124" height="242" rx="6" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="3.5"/>
+  <!-- Panel Dalam Aksen Pastel Manis / Pink Lembut -->
+  <rect x="36" y="44" width="104" height="218" rx="6" fill="#ffeaf2" stroke="#ff8cb7" stroke-width="2.5"/>
+  <rect x="42" y="50" width="92" height="206" rx="4" fill="#fff5f8"/>
+  <!-- Gagang Bulat Pink Imut (Strawberry Pink) -->
+  <circle cx="134" cy="158" r="9" fill="#d83a75"/>
+  <circle cx="134" cy="154" r="9" fill="#ff599e" stroke="#2b3a4a" stroke-width="3"/>
+  <circle cx="131" cy="151" r="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Pintu Kanan Lemari (Tertutup) -->
+  <!-- Bayangan Pintu Kanan -->
+  <rect x="156" y="36" width="124" height="242" rx="6" fill="#e07d10"/>
+  <rect x="156" y="32" width="124" height="242" rx="6" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="3.5"/>
+  <!-- Panel Dalam Aksen Pastel Manis / Pink Lembut -->
+  <rect x="166" y="44" width="104" height="218" rx="6" fill="#ffeaf2" stroke="#ff8cb7" stroke-width="2.5"/>
+  <rect x="172" y="50" width="92" height="206" rx="4" fill="#fff5f8"/>
+  <!-- Gagang Bulat Pink Imut (Strawberry Pink) -->
+  <circle cx="172" cy="158" r="9" fill="#d83a75"/>
+  <circle cx="172" cy="154" r="9" fill="#ff599e" stroke="#2b3a4a" stroke-width="3"/>
+  <circle cx="169" cy="151" r="3" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Engsel Lemari Imut -->
+  <rect x="20" y="55" width="6" height="18" rx="3" fill="#2b3a4a"/>
+  <rect x="20" y="235" width="6" height="18" rx="3" fill="#2b3a4a"/>
+  <rect x="280" y="55" width="6" height="18" rx="3" fill="#2b3a4a"/>
+  <rect x="280" y="235" width="6" height="18" rx="3" fill="#2b3a4a"/>
+</svg>

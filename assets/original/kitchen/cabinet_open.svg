@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 306 304" width="306" height="304">
+  <!-- Mahkota / Lis Atas Lemari Madu Hangat -->
+  <path d="M 6 18 L 300 18 L 294 6 L 12 6 Z" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Bayangan Tebal Rangka Lemari -->
+  <rect x="12" y="24" width="282" height="274" rx="12" fill="#d97706"/>
+  <!-- Rangka Utama Lemari Kayu -->
+  <rect x="12" y="18" width="282" height="274" rx="12" fill="#ffa834" stroke="#2b3a4a" stroke-width="4.5" stroke-linejoin="round"/>
+  
+  <!-- Ruang Dalam Lemari (Kedalaman Hangat Nyaman) -->
+  <rect x="22" y="28" width="262" height="254" rx="8" fill="#c26a10" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="26" y="32" width="254" height="246" fill="#ab5906"/>
+  
+  <!-- Dinding Dalam Lemari Bersih dengan Garis Halus -->
+  <line x1="26" y1="90" x2="280" y2="90" stroke="#944a00" stroke-width="2.5"/>
+  <line x1="26" y1="210" x2="280" y2="210" stroke="#944a00" stroke-width="2.5"/>
+  
+  <!-- Ambalan / Rak Tengah Kayu Cerah -->
+  <rect x="20" y="152" width="266" height="14" rx="4" fill="#d97706"/>
+  <rect x="20" y="146" width="266" height="14" rx="4" fill="#ffc857" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="22" y="148" width="262" height="4" fill="#fff0b8"/>
+
+  <!-- Pintu Kiri (Terbuka Menyamping) -->
+  <path d="M 22 28 L 4 44 L 4 266 L 22 284 Z" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M 18 42 L 7 53 L 7 257 L 18 272 Z" fill="#ffeaf2"/>
+  <!-- Gagang Bulat Pink Imut Kiri -->
+  <circle cx="8" cy="156" r="7" fill="#ff599e" stroke="#2b3a4a" stroke-width="2.5"/>
+
+  <!-- Pintu Kanan (Terbuka Menyamping) -->
+  <path d="M 284 28 L 302 44 L 302 266 L 284 284 Z" fill="#ffbe5c" stroke="#2b3a4a" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M 288 42 L 299 53 L 299 257 L 288 272 Z" fill="#ffeaf2"/>
+  <!-- Gagang Bulat Pink Imut Kanan -->
+  <circle cx="298" cy="156" r="7" fill="#ff599e" stroke="#2b3a4a" stroke-width="2.5"/>
+</svg>

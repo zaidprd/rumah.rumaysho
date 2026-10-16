@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <!-- Dinding Utama Pastel Cerah & Bersih (Duolingo Style) -->
+  <rect x="0" y="0" width="1280" height="500" fill="#e8f4fa"/>
+  
+  <!-- Lis Dinding Atas Cerah -->
+  <rect x="0" y="112" width="1280" height="16" fill="#cbe7f5"/>
+  <line x1="0" y1="128" x2="1280" y2="128" stroke="#aed7ed" stroke-width="2.5"/>
+
+  <!-- Lantai Kayu Hangat Cerah -->
+  <rect x="0" y="500" width="1280" height="220" fill="#fce7b8"/>
+  <!-- Lis Pembatas Lantai & Dinding -->
+  <line x1="0" y1="500" x2="1280" y2="500" stroke="#e0a353" stroke-width="9"/>
+  <!-- Garis-garis Ubin Kayu Lantai -->
+  <g stroke="#f0c988" stroke-width="2.5">
+    <line x1="0" y1="510" x2="-78" y2="720"/>
+    <line x1="128" y1="510" x2="50" y2="720"/>
+    <line x1="256" y1="510" x2="178" y2="720"/>
+    <line x1="384" y1="510" x2="306" y2="720"/>
+    <line x1="512" y1="510" x2="434" y2="720"/>
+    <line x1="640" y1="510" x2="562" y2="720"/>
+    <line x1="768" y1="510" x2="690" y2="720"/>
+    <line x1="896" y1="510" x2="818" y2="720"/>
+    <line x1="1024" y1="510" x2="946" y2="720"/>
+    <line x1="1152" y1="510" x2="1074" y2="720"/>
+    <line x1="1280" y1="510" x2="1202" y2="720"/>
+    <line x1="0" y1="570" x2="1280" y2="570"/>
+    <line x1="0" y1="640" x2="1280" y2="640"/>
+    <line x1="0" y1="710" x2="1280" y2="710"/>
+  </g>
+
+  <!-- Backsplash Keramik Putih Mengkilap Dapur -->
+  <rect x="420" y="167" width="360" height="188" fill="#ffffff" stroke="#2b3a4a" stroke-width="4"/>
+  <g stroke="#cde6f2" stroke-width="2.5">
+    <!-- Garis Vertikal Keramik -->
+    <line x1="462" y1="167" x2="462" y2="355"/>
+    <line x1="504" y1="167" x2="504" y2="355"/>
+    <line x1="546" y1="167" x2="546" y2="355"/>
+    <line x1="588" y1="167" x2="588" y2="355"/>
+    <line x1="630" y1="167" x2="630" y2="355"/>
+    <line x1="672" y1="167" x2="672" y2="355"/>
+    <line x1="714" y1="167" x2="714" y2="355"/>
+    <line x1="756" y1="167" x2="756" y2="355"/>
+    <!-- Garis Horisontal Keramik -->
+    <line x1="420" y1="205" x2="780" y2="205"/>
+    <line x1="420" y1="243" x2="780" y2="243"/>
+    <line x1="420" y1="281" x2="780" y2="281"/>
+    <line x1="420" y1="319" x2="780" y2="319"/>
+  </g>
+
+  <!-- Counter Meja Dapur / Bawah Wastafel -->
+  <rect x="422" y="348" width="365" height="162" rx="6" fill="#fffaf0" stroke="#2b3a4a" stroke-width="4.5"/>
+  <rect x="422" y="348" width="365" height="18" fill="#ffd175" stroke="#2b3a4a" stroke-width="3.5"/>
+  <!-- Kompor 2 Tungku di Sisi Kiri Counter -->
+  <rect x="442" y="370" width="76" height="14" rx="4" fill="#3d4c5c"/>
+  <circle cx="462" cy="402" r="16" fill="#2b3a4a" stroke="#1d2630" stroke-width="2"/>
+  <circle cx="500" cy="402" r="16" fill="#2b3a4a" stroke="#1d2630" stroke-width="2"/>
+  <circle cx="462" cy="402" r="7" fill="#6ba3be"/>
+  <circle cx="500" cy="402" r="7" fill="#6ba3be"/>
+  <!-- Pintu Lemari Bawah Meja Dapur: Honey Caramel dengan Gagang Pink -->
+  <rect x="438" y="434" width="66" height="62" rx="6" fill="#ffa834" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="512" y="434" width="62" height="62" rx="6" fill="#ffa834" stroke="#2b3a4a" stroke-width="3"/>
+  <circle cx="494" cy="465" r="5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+  <circle cx="522" cy="465" r="5" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2"/>
+
+  <!-- Jendela Besar Dapur -->
+  <rect x="786" y="144" width="254" height="164" rx="8" fill="#ffffff" stroke="#2b3a4a" stroke-width="4.5"/>
+  <!-- Kaca Jendela & Pemandangan Cerah -->
+  <rect x="798" y="156" width="230" height="140" fill="#aee2ff"/>
+  <!-- Matahari Pagi Emas Cerah (Duolingo Gold #ffc800) -->
+  <circle cx="991" cy="181" r="24" fill="#ffc800"/>
+  <!-- Pepohonan Hijau Ceria Luar Jendela (Duolingo Green #58cc02) -->
+  <circle cx="835" cy="268" r="42" fill="#58cc02"/>
+  <circle cx="880" cy="276" r="34" fill="#46a302"/>
+  <circle cx="934" cy="285" r="28" fill="#58cc02"/>
+  <!-- Kusen Palang Jendela Putih -->
+  <line x1="913" y1="156" x2="913" y2="296" stroke="#ffffff" stroke-width="9"/>
+  <line x1="798" y1="226" x2="1028" y2="226" stroke="#ffffff" stroke-width="9"/>
+  
+  <!-- Tirai Jendela Strawberry Pink Cantik (Disukai Anak-anak) -->
+  <rect x="772" y="134" width="22" height="184" rx="6" fill="#ff70ad" stroke="#2b3a4a" stroke-width="3.5"/>
+  <rect x="1031" y="134" width="22" height="184" rx="6" fill="#ff70ad" stroke="#2b3a4a" stroke-width="3.5"/>
+  <!-- Tali Pengikat Tirai Kuning -->
+  <rect x="770" y="220" width="26" height="8" rx="3" fill="#ffc800" stroke="#2b3a4a" stroke-width="2"/>
+  <rect x="1029" y="220" width="26" height="8" rx="3" fill="#ffc800" stroke="#2b3a4a" stroke-width="2"/>
+  <!-- Ambang Bawah Jendela Kayu Madu -->
+  <rect x="764" y="306" width="290" height="16" rx="4" fill="#ffa834" stroke="#2b3a4a" stroke-width="3.5"/>
+
+  <!-- Kulkas Pastel Cantik di Sisi Kanan (Pastel Mint Cerah) -->
+  <rect x="1100" y="162" width="116" height="282" rx="12" fill="#9de3db" stroke="#2b3a4a" stroke-width="4.5"/>
+  <line x1="1100" y1="294" x2="1216" y2="294" stroke="#2b3a4a" stroke-width="4"/>
+  <!-- Gagang Kulkas Putih Bulat -->
+  <rect x="1186" y="206" width="8" height="64" rx="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="1186" y="338" width="8" height="66" rx="4" fill="#ffffff" stroke="#2b3a4a" stroke-width="3"/>
+  <!-- Magnet Kulkas Warna-Warni Khas Duolingo -->
+  <!-- Magnet Bintang Pink -->
+  <circle cx="1131" cy="205" r="9" fill="#ff70ad" stroke="#2b3a4a" stroke-width="2.5"/>
+  <!-- Magnet Kuning Emas -->
+  <circle cx="1152" cy="230" r="8" fill="#ffc800" stroke="#2b3a4a" stroke-width="2.5"/>
+  <!-- Magnet Biru Cyan -->
+  <rect x="1122" y="246" width="14" height="14" rx="4" fill="#1cb0f6" stroke="#2b3a4a" stroke-width="2.5"/>
+
+  <!-- Rak Tanaman Pot Terakota & Daun Hijau Segar -->
+  <rect x="1054" y="448" width="58" height="14" rx="4" fill="#ffa834" stroke="#2b3a4a" stroke-width="3"/>
+  <circle cx="1083" cy="425" r="30" fill="#58cc02"/>
+  <circle cx="1064" cy="435" r="20" fill="#46a302"/>
+  <polygon points="1072,434 1094,434 1090,448 1076,448" fill="#ff599e" stroke="#2b3a4a" stroke-width="2.5"/>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" width="84" height="84">
+  <!-- Daun Hijau Segar Ceria (Duolingo Green) -->
+  <path d="M 46 20 C 48 11, 55 7, 58 6" fill="none" stroke="#543820" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 48 16 C 60 11, 68 15, 65 24 C 55 26, 49 20, 48 16 Z" 
+        fill="#58cc02" stroke="#2b3a4a" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M 50 18 C 58 15, 63 17, 61 22 C 55 23, 51 20, 50 18 Z" fill="#79df20"/>
+  
+  <!-- Bayangan Bawah Tebal -->
+  <path d="M 42 26 C 61 26, 71 39, 69 56 C 66 70, 50 80, 35 77 C 21 74, 15 60, 17 46 C 19 32, 30 26, 42 26 Z" 
+        fill="#d97706"/>
+
+  <!-- Badan Mangga Kuning Emas Ceria -->
+  <path d="M 42 22 C 60 22, 70 35, 68 52 C 65 66, 49 76, 35 73 C 21 70, 16 56, 18 42 C 20 28, 30 22, 42 22 Z" 
+        fill="#ffc800" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M 38 28 C 54 28, 64 38, 62 50 C 60 62, 48 68, 38 66 C 27 64, 23 54, 24 43 C 25 32, 31 28, 38 28 Z" 
+        fill="#ff9600" opacity="0.45"/>
+        
+  <!-- Kilau Permukaan -->
+  <path d="M 27 32 A 18 18 0 0 1 42 26" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Noda Debu & Lumpur Asimetris (Jelas Butuh Dicuci, Tanpa Mirip Wajah) -->
+  <path d="M 23 57 C 21 64, 30 73, 43 72 C 40 65, 33 60, 27 58 Z" fill="#7c532b" stroke="#482d13" stroke-width="2"/>
+  <path d="M 48 37 C 55 39, 63 46, 65 52 C 63 50, 56 43, 49 39 Z" fill="#8f6336"/>
+  <circle cx="50" cy="58" r="4" fill="#7c532b"/>
+  <circle cx="58" cy="62" r="3" fill="#8f6336"/>
+  <circle cx="34" cy="47" r="2.5" fill="#8f6336"/>
+</svg>

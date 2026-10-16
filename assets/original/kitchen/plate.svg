@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" width="84" height="84">
+  <!-- Bayangan Tebal Bawah Piring (3D Duolingo Style) -->
+  <circle cx="42" cy="45" r="38" fill="#e04d80"/>
+  <!-- Piring Utama: Putih Bersih dengan Rim Candy Pink -->
+  <circle cx="42" cy="41" r="38" fill="#ffffff" stroke="#2b3a4a" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Lingkar Rim Merah Muda / Pink Ceria -->
+  <circle cx="42" cy="41" r="33" fill="#ffeaf2" stroke="#ff70ad" stroke-width="3"/>
+  <!-- Cekungan Dalam Piring Bersih -->
+  <circle cx="42" cy="41" r="23" fill="#ffffff" stroke="#fcd2e1" stroke-width="2"/>
+  
+  <!-- Aksen Kilau Ceria -->
+  <path d="M 22 28 A 24 24 0 0 1 36 17" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="20" cy="36" r="2.5" fill="#ffffff"/>
+</svg>

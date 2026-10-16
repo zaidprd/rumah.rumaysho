@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 280" width="354" height="280">
+  <!-- Sandaran Kursi Kiri: Pink Permen Ceria (Duolingo Style) -->
+  <rect x="25" y="16" width="70" height="86" rx="10" fill="#e04d80"/>
+  <rect x="25" y="10" width="70" height="86" rx="10" fill="#ff70ad" stroke="#2b3a4a" stroke-width="4"/>
+  <rect x="36" y="24" width="48" height="22" rx="6" fill="#ffa8cd" stroke="#2b3a4a" stroke-width="2.5"/>
+  <rect x="36" y="54" width="48" height="30" rx="6" fill="#e04d80"/>
+
+  <!-- Sandaran Kursi Kanan: Pink Permen Ceria -->
+  <rect x="259" y="16" width="70" height="86" rx="10" fill="#e04d80"/>
+  <rect x="259" y="10" width="70" height="86" rx="10" fill="#ff70ad" stroke="#2b3a4a" stroke-width="4"/>
+  <rect x="270" y="24" width="48" height="22" rx="6" fill="#ffa8cd" stroke="#2b3a4a" stroke-width="2.5"/>
+  <rect x="270" y="54" width="48" height="30" rx="6" fill="#e04d80"/>
+
+  <!-- Kaki Meja Makan Kayu Madu Kokoh -->
+  <rect x="26" y="180" width="24" height="95" rx="5" fill="#d97706" stroke="#2b3a4a" stroke-width="4"/>
+  <rect x="304" y="180" width="24" height="95" rx="5" fill="#d97706" stroke="#2b3a4a" stroke-width="4"/>
+  <!-- Sepatu Kaki Meja -->
+  <rect x="24" y="258" width="28" height="17" rx="4" fill="#8c5828" stroke="#2b3a4a" stroke-width="3"/>
+  <rect x="302" y="258" width="28" height="17" rx="4" fill="#8c5828" stroke="#2b3a4a" stroke-width="3"/>
+
+  <!-- Badan / Apron Meja Makan Kayu Hangat -->
+  <rect x="12" y="86" width="330" height="106" rx="8" fill="#d97706"/>
+  <rect x="12" y="80" width="330" height="106" rx="8" fill="#ffa834" stroke="#2b3a4a" stroke-width="4"/>
+  <rect x="20" y="88" width="314" height="90" fill="#ffbe5c"/>
+  
+  <!-- Daun Meja Atas (Tabletop Utama) -->
+  <rect x="2" y="70" width="350" height="26" rx="8" fill="#d97706"/>
+  <rect x="2" y="64" width="350" height="26" rx="8" fill="#ffd175" stroke="#2b3a4a" stroke-width="4"/>
+  <line x1="12" y1="70" x2="342" y2="70" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Taplak Meja Strawberry Pink & Krem Ceria di Tengah -->
+  <rect x="110" y="70" width="134" height="120" rx="6" fill="#ffffff" stroke="#2b3a4a" stroke-width="3.5"/>
+  <rect x="110" y="70" width="134" height="120" rx="6" fill="#ffeaf2"/>
+  <!-- Pola Garis Manis di Ujung Taplak -->
+  <line x1="110" y1="176" x2="244" y2="176" stroke="#ff70ad" stroke-width="5"/>
+  <line x1="110" y1="183" x2="244" y2="183" stroke="#ff9ec6" stroke-width="2.5"/>
+</svg>

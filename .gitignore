@@ -1,0 +1,12 @@
+.godot/
+android/
+*.apk
+*.aab
+*.keystore
+export_presets.cfg
+*.msi
+*.exe
+tools/
+editor_data/
+
+

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Bayangan Tebal Tombol Jeda (Duolingo 3D Button) -->
+  <rect x="4" y="9" width="56" height="51" rx="16" fill="#e04d80"/>
+  <!-- Tombol Utama Bubblegum Pink -->
+  <rect x="4" y="4" width="56" height="51" rx="16" fill="#ff70ad" stroke="#2b3a4a" stroke-width="3.5"/>
+  <rect x="7" y="7" width="50" height="20" rx="10" fill="#ffa8cd" opacity="0.6"/>
+  <!-- Dua Batang Pause Putih Bersih -->
+  <rect x="20" y="18" width="8" height="24" rx="4" fill="#ffffff"/>
+  <rect x="36" y="18" width="8" height="24" rx="4" fill="#ffffff"/>
+</svg>

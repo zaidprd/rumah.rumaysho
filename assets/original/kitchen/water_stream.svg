@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 96" width="48" height="96">
+  <!-- Kolom Aliran Air Duolingo Cyan -->
+  <path d="M 20 0 C 18 20, 16 60, 14 84 C 18 88, 30 88, 34 84 C 32 60, 30 20, 28 0 Z" 
+        fill="#1cb0f6" opacity="0.9"/>
+  <!-- Garis Alir Berkilau Terang -->
+  <line x1="22" y1="2" x2="19" y2="78" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="27" y1="10" x2="26" y2="72" stroke="#a6e6ff" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="16" y1="26" x2="15" y2="62" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Percikan Gelembung Air Ceria -->
+  <ellipse cx="24" cy="86" rx="16" ry="6" fill="#6dd4ff" opacity="0.8"/>
+  <circle cx="9" cy="80" r="3.5" fill="#1cb0f6"/>
+  <circle cx="38" cy="82" r="3.5" fill="#1cb0f6"/>
+  <circle cx="24" cy="92" r="2.5" fill="#ffffff"/>
+  <circle cx="10" cy="79" r="1.5" fill="#ffffff"/>
+  <circle cx="39" cy="81" r="1.5" fill="#ffffff"/>
+</svg>
