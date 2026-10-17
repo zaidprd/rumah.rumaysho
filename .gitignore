@@ -8,5 +8,4 @@ export_presets.cfg
 *.exe
 tools/
 editor_data/
-
-
+scratch/
