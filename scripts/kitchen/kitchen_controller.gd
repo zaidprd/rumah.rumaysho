@@ -143,6 +143,7 @@ func _init_structure() -> void:
 	ui_drawer = Control.new()
 	ui_drawer.name = "UIDrawer"
 	ui_drawer.custom_minimum_size = SIZE
+	ui_drawer.mouse_filter = Control.MOUSE_FILTER_IGNORE
 	ui_layer.add_child(ui_drawer)
 	ui_drawer.draw.connect(_on_ui_draw)
 
@@ -277,7 +278,7 @@ func _update_character(delta: float) -> void:
 			if randf() < 0.25:
 				_spawn_star(char_pos + Vector2(randf_range(-50, 50), -160 + randf_range(-40, 20)), GOLD)
 		elif game_state == "intro":
-			char_state = "wave"
+			char_state = "idle"
 		elif game_state == "reward" or (game_state == "feed" and feed_bites >= 3):
 			char_state = "cheer"
 			hop = absf(sin(walk_timer * 0.8)) * 16.0
@@ -312,9 +313,10 @@ func _update_particles(delta: float) -> void:
 		if b.life > 0.0: keep_bubbles.append(b)
 	bubbles = keep_bubbles
 
-func _unhandled_input(event: InputEvent) -> void:
+func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and event.keycode == KEY_ESCAPE:
 		_toggle_pause()
+		get_viewport().set_input_as_handled()
 		return
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		_pointer(event.position, event.pressed)
@@ -325,16 +327,34 @@ func _unhandled_input(event: InputEvent) -> void:
 	elif event is InputEventScreenDrag and not paused:
 		_drag(event.position)
 
+func _unhandled_input(event: InputEvent) -> void:
+	_input(event)
+
 func _pointer(screen_p: Vector2, pressed: bool) -> void:
 	if paused:
-		if pressed and Rect2(490, 390, 300, 70).has_point(screen_p):
+		if pressed and Rect2(410, 230, 460, 270).has_point(screen_p):
 			_toggle_pause()
 		return
 
-	# Tombol Tetap di Layar (Fixed Screen UI)
-	if pressed and Rect2(1185, 25, 64, 64).has_point(screen_p):
+	# Tombol Tetap di Layar (Fixed Screen UI) - Pause button
+	if pressed and Rect2(1170, 15, 90, 85).has_point(screen_p):
 		_toggle_pause()
 		return
+
+	# Header Navigasi Stasiun Langsung (Direct Station Tabs)
+	if pressed and screen_p.y <= 95:
+		if Rect2(620, 15, 135, 65).has_point(screen_p):
+			_enter_wash_station()
+			return
+		elif Rect2(755, 15, 135, 65).has_point(screen_p):
+			_enter_chop_station()
+			return
+		elif Rect2(890, 15, 135, 65).has_point(screen_p):
+			_enter_plate_station()
+			return
+		elif Rect2(1025, 15, 135, 65).has_point(screen_p):
+			_enter_feed_station()
+			return
 
 	# Konversi ke World Coordinates via Camera2D
 	var world_p := screen_p
@@ -357,33 +377,55 @@ func _pointer(screen_p: Vector2, pressed: bool) -> void:
 	# ========================================================
 	if game_state == "intro":
 		if pressed:
-			# Tombol: "BISMILLAH, SAYA MAU MASAK!"
-			if Rect2(190, 310, 620, 66).has_point(screen_p):
+			# Tombol: "BISMILLAH, SAYA MAU MASAK!" (area tombol luas & ramah anak)
+			if Rect2(150, 280, 700, 115).has_point(screen_p):
 				_enter_wash_station()
 				return
 			# Tap Karakter Lucas
-			if Rect2(char_pos.x - 60, char_pos.y - 230 - hop, 120, 230).has_point(world_p):
+			if Rect2(char_pos.x - 90, char_pos.y - 250 - hop, 180, 260).has_point(world_p):
 				_play_sfx(sfx_laugh)
 				_trigger_cheer(1.2)
 				return
-		if pressed and (SINK.has_point(world_p) or FAUCET.grow(20).has_point(world_p)):
-			_enter_wash_station()
-			return
+			# Klik wastafel/keran
+			if SINK.has_point(world_p) or FAUCET.grow(30).has_point(world_p):
+				_enter_wash_station()
+				return
 
 	# ========================================================
 	# STATE: STASIUN 1 - CUCI BUAH (WASH)
 	# ========================================================
 	elif game_state == "wash":
-		# Tombol Lanjut ke Talenan
-		if Rect2(920, 640, 330, 60).has_point(screen_p) and wash >= 1.0 and not faucet_on:
+		# Tombol Lanjut ke Talenan (Otomatis matikan keran jika masih menyala agar tidak stuck)
+		if Rect2(900, 620, 360, 85).has_point(screen_p) and wash >= 1.0:
+			if faucet_on:
+				faucet_on = false
 			_enter_chop_station()
 			return
 		
-		# Klik Keran Air (World Space)
-		if FAUCET.grow(25).has_point(world_p):
+		# 1. Usap / Klik Buah Mangga di Wastafel (Sink Basin)
+		var fruit_wash_box := Rect2(180, 335, 200, 115)
+		if fruit_wash_box.has_point(world_p) or (SINK.has_point(world_p) and world_p.y >= 335):
+			if faucet_on:
+				wash = minf(1.0, wash + 0.34)
+				_play_sfx(sfx_bubble)
+				for i in 6:
+					_spawn_bubble(world_p + Vector2(randf_range(-25, 25), randf_range(-25, 25)))
+				if wash >= 1.0:
+					message = "Alhamdulillah buah bersih! Matikan keran ya, anak shalih hemat air."
+					_play_sfx(sfx_sparkle)
+					for i in 8:
+						_spawn_star(world_p, GOLD)
+			else:
+				message = "Nyalakan keran air dahulu untuk mencuci buah."
+			_redraw_all()
+			return
+
+		# 2. Klik Keran Air (World Space di atas wastafel)
+		var faucet_box := Rect2(235, 255, 105, 80)
+		if faucet_box.has_point(world_p) or (FAUCET.has_point(world_p) and world_p.y < 335):
 			faucet_on = not faucet_on
 			if faucet_on:
-				message = "Air keran mengalir! Usap buah mangga sampai berkilau."
+				message = "Air keran mengalir! Usap buah mangga sampai bersih berkilau."
 				_play_sfx(sfx_water)
 			else:
 				message = "Alhamdulillah keran dimatikan! Kita hemat air dan tidak israf."
@@ -393,41 +435,23 @@ func _pointer(screen_p: Vector2, pressed: bool) -> void:
 			_redraw_all()
 			return
 
-		# Usap / Klik Buah Mangga di Wastafel
-		var fruit_wash_box := Rect2(230, 340, 100, 75)
-		if fruit_wash_box.has_point(world_p):
-			if faucet_on:
-				wash = minf(1.0, wash + 0.34)
-				_play_sfx(sfx_bubble)
-				for i in 5:
-					_spawn_bubble(world_p + Vector2(randf_range(-20, 20), randf_range(-20, 20)))
-				if wash >= 1.0:
-					message = "Alhamdulillah buah bersih! Matikan keran ya, anak shalih hemat air."
-					_play_sfx(sfx_sparkle)
-					for i in 6:
-						_spawn_star(world_p, GOLD)
-			else:
-				message = "Nyalakan keran air dahulu untuk mencuci buah."
-			_redraw_all()
-			return
-
 	# ========================================================
 	# STATE: STASIUN 2 - MEMOTONG DI TALENAN (CHOP)
 	# ========================================================
 	elif game_state == "chop":
 		# Tombol Lanjut ke Menata Piring
-		if Rect2(920, 640, 330, 60).has_point(screen_p) and chop_stage >= 3:
+		if Rect2(900, 620, 360, 85).has_point(screen_p) and chop_stage >= 3:
 			_enter_plate_station()
 			return
 		
 		# Ketuk buah / talenan untuk memotong
-		var board_box := Rect2(440, 270, 360, 220)
+		var board_box := Rect2(420, 250, 400, 260)
 		if board_box.has_point(world_p):
 			if chop_stage < 3:
 				chop_stage += 1
 				knife_anim = 1.0
 				_play_sfx(sfx_chop)
-				for i in 5:
+				for i in 6:
 					_spawn_star(world_p, GOLD)
 				if chop_stage == 1:
 					message = "TUK! Buah terbelah dua. Ketuk lagi untuk memotong!"
@@ -445,12 +469,12 @@ func _pointer(screen_p: Vector2, pressed: bool) -> void:
 	# ========================================================
 	elif game_state == "plate":
 		# Tombol Lanjut ke Suapi Karakter
-		if Rect2(920, 640, 330, 60).has_point(screen_p) and honey_poured:
+		if Rect2(900, 620, 360, 85).has_point(screen_p) and honey_poured:
 			_enter_feed_station()
 			return
 
 		# Klik Stoples Madu (Tuang Madu)
-		var honey_box := Rect2(500, 420, 110, 140)
+		var honey_box := Rect2(470, 400, 160, 180)
 		if honey_box.has_point(world_p):
 			honey_poured = true
 			_play_sfx(sfx_sparkle)
@@ -465,28 +489,37 @@ func _pointer(screen_p: Vector2, pressed: bool) -> void:
 	# ========================================================
 	elif game_state == "feed":
 		# Tombol Baca Bismillah
-		if not bismillah_said and Rect2(440, 240, 400, 64).has_point(screen_p):
+		if not bismillah_said and Rect2(420, 220, 440, 95).has_point(screen_p):
 			bismillah_said = true
 			_play_sfx(sfx_yes)
 			_trigger_cheer(1.2)
 			message = "Bismillah! Sekarang suapi buah dengan tangan kananmu ke Lucas!"
-			for i in 6:
+			for i in 8:
 				_spawn_star(char_pos + Vector2(randf_range(-40, 40), -180), GOLD)
 			_redraw_all()
 			return
 		
-		# Ambil potongan buah dari piring untuk disuapkan
+		# Ambil potongan buah dari piring untuk disuapkan (drag atau tap)
 		if bismillah_said and feed_bites < 3:
-			var plate_slice_box := Rect2(300, 440, 180, 120)
+			var plate_slice_box := Rect2(280, 430, 220, 140)
 			if plate_slice_box.has_point(world_p):
 				is_dragging_slice = true
 				drag_slice_pos = screen_p
 				message = "Arahkan potongan buah ke mulut Lucas..."
 				_redraw_all()
 				return
+			
+			# Jika sedang pegang slice dan mengetuk karakter/mulutnya
+			if is_dragging_slice:
+				var mouth_box := Rect2(char_pos.x - 90, char_pos.y - 250 - hop, 180, 260)
+				if mouth_box.has_point(world_p):
+					_release_slice(screen_p)
+					is_dragging_slice = false
+					_redraw_all()
+					return
 
 		# Tombol Buka Layar Hadiah setelah kenyang
-		if feed_bites >= 3 and Rect2(440, 640, 400, 60).has_point(screen_p):
+		if feed_bites >= 3 and Rect2(420, 620, 440, 85).has_point(screen_p):
 			_enter_reward_screen()
 			return
 
@@ -494,8 +527,8 @@ func _pointer(screen_p: Vector2, pressed: bool) -> void:
 	# STATE: REWARD
 	# ========================================================
 	elif game_state == "reward":
-		# Tombol: "ALHAMDULILLAH, MAIN LAGI"
-		if Rect2(280, 470, 420, 64).has_point(screen_p):
+		# Tombol: "ALHAMDULILLAH, MAIN LAGI" atau klik modal
+		if Rect2(250, 430, 490, 95).has_point(screen_p):
 			_reset_game()
 			return
 
@@ -614,7 +647,7 @@ func _reset_game() -> void:
 	completed = false
 	char_pos = Vector2(1000, 550)
 	char_target_pos = Vector2(1000, 550)
-	char_state = "wave"
+	char_state = "idle"
 	char_facing = -1.0
 	message = "Bantu Umma menyiapkan sarapan buah segar penuh berkah."
 	_save()
@@ -721,7 +754,7 @@ func _draw_world_character() -> void:
 
 	var tex := tex_lucas_idle
 	if char_state == "cheer": tex = tex_lucas_cheer if tex_lucas_cheer else tex_lucas_idle
-	elif char_state == "wave": tex = tex_lucas_wave if tex_lucas_wave else tex_lucas_idle
+	elif char_state == "wave": tex = tex_lucas_idle
 
 	if not tex: return
 
